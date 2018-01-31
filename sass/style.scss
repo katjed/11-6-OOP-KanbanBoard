@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
-@import url(https://fonts.googleapis.com/css?family=Kalam);
 
 $font: 'Open Sans', sans-serif;
-$title: 'Kalam', cursive;
 $white: #fff;
 $orange: #e29663;
 $green-light: #99e5c5;
@@ -63,7 +61,6 @@ body {
 			.column-title {
 				text-align: center;
 				font-size: 25px;
-				font-family: $title;
 				text-transform: uppercase;
 				padding: 10px 15px;
 				border: 2px solid $green-dark;
