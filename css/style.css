@@ -83,6 +83,7 @@ body {
   outline: none;
   margin: 10px 15px 10px 10px;
   transition: ease-in-out .3s;
+  float: left;
 }
 
 .board .column-container .column .btn-delete:hover {
@@ -92,7 +93,6 @@ body {
 }
 
 .board .column-container .column .add-card {
-  width: 100px;
   height: 35px;
   line-height: 30px;
   font-size: 16px;
@@ -116,6 +116,7 @@ body {
   margin: 0;
   padding: 0px;
   list-style-type: none;
+  min-height: 54px;
 }
 
 .board .column-container .column .column-card-list .card {
@@ -125,13 +126,10 @@ body {
   margin-top: 10px;
 }
 
-.board .column-container .column .column-card-list .card .btn-delete {
-  float: left;
-}
-
 .board .column-container .column .column-card-list .card .card-description {
   margin-right: 10px;
   margin-left: 60px;
+  font-size: 16px;
 }
 
 .board .column-container .column .column-card-list .card-placeholder {

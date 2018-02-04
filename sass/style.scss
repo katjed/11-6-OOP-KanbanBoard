@@ -77,6 +77,7 @@ body {
 				outline: none;
 				margin: 10px 15px 10px 10px;
 				transition: ease-in-out .3s;
+				float: left;
 
 				&:hover {
 					transform: scale(1.1);
@@ -84,7 +85,6 @@ body {
 				}
 			}
 			.add-card {
-				width: 100px;
 				height: 35px;
 				line-height: 30px;
 				font-size: 16px;
@@ -106,6 +106,7 @@ body {
 				margin: 0;
 				padding: 0px;
 				list-style-type: none;
+				min-height: 54px;
 			
 				.card {
 					padding: 0;
@@ -113,12 +114,10 @@ body {
 					border-radius: 10px;
 					margin-top: 10px;
 
-					.btn-delete {
-						float: left;
-					}
 					.card-description {
 						margin-right: 10px;
 						margin-left: 60px;
+						font-size: 16px;
 					}
 				}			
 				.card-placeholder {
