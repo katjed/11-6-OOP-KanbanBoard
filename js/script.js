@@ -12,7 +12,6 @@ $(function() {
     // Class'Column'
 	function Column(name) {
     	var self = this; 
-
     	this.id = randomString();
     	this.name = name;
     	this.$element = createColumn();
@@ -24,15 +23,16 @@ $(function() {
 			var $columnDelete = $('<button>').addClass('btn-delete').text('x');
 			var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
 
-			$columnDelete.click(function() {  // Adding events
+			$columnDelete.click(function() {  // Adding events to column elements
         		self.removeColumn();
 			});
 
             /*
             $columnAddCard.click(function(event) {
-                self.addCard(new Card(prompt("Enter the name of the card")));
+                self.addCard(new Card(prompt("Enter card name")));
             });
-            */  
+            */
+              
             // Alternative - with blockade of adding nameless cards           
             $columnAddCard.click(function() {   
                 var name = prompt('Enter card name');
@@ -64,7 +64,6 @@ $(function() {
     // Class 'Card'
 	function Card(description) {
 		var self = this;
-
     	this.id = randomString();
     	this.description = description;
     	this.$element = createCard();
@@ -74,7 +73,7 @@ $(function() {
     		var $cardDescription = $('<p>').addClass('card-description').text(self.description);
     		var $cardDelete = $('<button>').addClass('btn-delete').text('x');
 
-    		$cardDelete.click(function(){  // Adding event
+    		$cardDelete.click(function(){  // Adding events to card elements
         		self.removeCard();
 			});
 
@@ -112,7 +111,7 @@ $(function() {
     	}).disableSelection();
   	}
 
-    // Adding event - creating column
+    // Adding events - creating column
     /*
   	$('.create-column').click(function(){
 		var name = prompt('Enter column name');
@@ -124,10 +123,9 @@ $(function() {
     $('.create-column').click(function() {  
         var name = prompt('Enter column name');
         if (name) {
-            self.createColumn(new Column(name));
-            }
-        board.addColumn(column);   
-        });
+            board.addColumn(new Column(name));
+        }  
+    });
 
     // Creating columns
 	var todoColumn = new Column('To do');
