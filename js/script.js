@@ -84,7 +84,7 @@ $(function() {
 		}
 	}
 
-    // Method for class 'Card'
+    // Methods for class 'Card'
 	Card.prototype = {
 		removeCard: function() {
 			this.$element.remove();
@@ -103,14 +103,6 @@ $(function() {
     	$element: $('#board .column-container')
 	};
 
-    // Drag'n'drop
-	function initSortable() {
-    	$('.column-card-list').sortable({
-      		connectWith: '.column-card-list',
-      		placeholder: 'card-placeholder'
-    	}).disableSelection();
-  	}
-
     // Adding events - creating column
     /*
   	$('.create-column').click(function(){
@@ -126,6 +118,14 @@ $(function() {
             board.addColumn(new Column(name));
         }  
     });
+
+     // Drag'n'drop
+    function initSortable() {
+        $('.column-card-list').sortable({
+            connectWith: '.column-card-list',
+            placeholder: 'card-placeholder'
+        }).disableSelection();
+    }
 
     // Creating columns
 	var todoColumn = new Column('To do');
