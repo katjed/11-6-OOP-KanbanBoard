@@ -1,3 +1,3 @@
-task-11-6
+11-6-OOP-KanbanBoard
 
-https://katjed.github.io/task-11-6/
+https://katjed.github.io/11-6-OOP-KanbanBoard/
